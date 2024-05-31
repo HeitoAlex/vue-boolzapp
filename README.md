@@ -17,6 +17,32 @@ Milestone 5 - opzionale
 Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
 Visualizzazione ora e ultimo messaggio inviato/ricevuto nella lista dei contatti 
 
+
+
+
+Scomponimento problema
+Milestone 1
+creo la struttura base su foglio HTML 
+creo la parte estetica su foglio CSS che mi servirà per lo sfondo, l'app e i messaggi
+inserisco nei data di vue l'array di oggetti contenente i dettagli di ogni chat e con un v-for su HTML creo una chat per ogni contatto che visualizzi nome e immagine 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 contacts: [
     {
         name: 'Michele',
