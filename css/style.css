@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "lato", sans-serif;
+    background: linear-gradient(
+        to top,
+        #DADBD4 80%,
+        #009688 80%
+    );
+}
