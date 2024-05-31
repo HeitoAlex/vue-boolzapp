@@ -18,9 +18,46 @@
 </head>
 
 <body>
-    <div id="app">
-        
-    </div>
+    <main id="app">
+        <section id="contacts">
+            <div id="user-profile">
+                <div id="user-avatar">
+                    <img src="./img/avatar_io.jpg" alt="user">
+                    <span>Sofia</span>
+                </div>
+                <div id="user-action">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div id="nav-bar">
+                <div id="notification">
+                    <span id="bell">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </span>
+                    <span id="notification-options">
+                        <p>Ricevi notifiche di nuovi messaggi</p>
+                        <p>Attiva notifiche desktop</p>
+                    </span>
+                </div>
+                <div id="search-contact">
+                    <div>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="search" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
+                    </div>
+                </div>
+                <div id="message-list"></div>
+            </div>
+        </section>
+        <section id="chat">
+            <div id="interlocutor"></div>
+            <div id="message-area">
+                <div id="conversation"></div>
+                <div id="text-input"></div>
+            </div>
+        </section>
+    </main>
 
     <!-- Vue -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>

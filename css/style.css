@@ -5,10 +5,16 @@
 }
 
 body {
+    height: 100vh;
     font-family: "lato", sans-serif;
     background: linear-gradient(
         to top,
         #DADBD4 80%,
         #009688 80%
     );
+}
+
+#app {
+    width: 1000px;
+    margin: 1.5rem auto;
 }
