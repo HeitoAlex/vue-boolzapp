@@ -9,12 +9,80 @@ body {
     font-family: "lato", sans-serif;
     background: linear-gradient(
         to top,
-        #DADBD4 80%,
-        #009688 80%
+        #DADBD4 85%,
+        #009688 85%
     );
 }
 
 #app {
-    width: 1000px;
+    width: 1200px;
     margin: 1.5rem auto;
+    display: flex;
+}
+
+section#contacts {
+    width: calc(100% - 65%);
+}
+
+section#chat {
+    width: calc(100% - 35%);
+}
+
+div#user-profile,
+div#interlocutor,
+div#text-input {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+    align-items: center;
+    background-color: #EAEAEA;
+    margin: 0;
+}
+
+div#interlocutor,
+div#text-input {
+    border-left: 2px solid #E4E4E4;
+}
+div#user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+div#user-avatar>img,
+div#interlocutor>img,
+div#notification>span#bell {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+div#user-action>i {
+    margin-right: .75rem;
+    color: #B1B1B1;
+}
+
+div#notification {
+    background-color: #8EDAFC;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+div#notification>span#bell {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .25rem;
+}
+
+span#bell>i {
+    color: #8EDAFC;
+}
+
+div#conversation {
+    background-image: url(../img/mine.jpg);
+    height: 600px;
 }
