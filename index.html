@@ -80,6 +80,11 @@
             </div>
             <div id="message-area">
                 <div id="conversation">
+                    <div v-for="(item) in contacts[activeContact].messages" class="text-content">
+                        <div :class="( item.status==='sent' ) ? 'sent-message' : 'recived-message' " >
+                            {{ item.message }}
+                        </div>
+                    </div>
                 </div>
                 <div id="text-input"></div>
             </div>

@@ -162,6 +162,9 @@ div#conversation{
     background-image: url(../img/mine.jpg);
     height: calc(100% - 50px);
     padding: 2.5rem 4rem;
+}
+
+.text-content{
     display: flex;
     flex-direction: column;
 }
@@ -170,7 +173,7 @@ div#conversation{
     background-color: white;
     border-radius: .7rem;
     max-width: 250px;
-    padding: .5rem;
+    padding: .75rem;
     margin-bottom: .5rem;
     display: flex;
     align-self: flex-start;
@@ -180,7 +183,7 @@ div#conversation{
     background-color: #D5F9BA;
     border-radius: .7rem;
     max-width: 250px;
-    padding: .5rem;
+    padding: .75rem;
     margin-bottom: .5rem;
     display: flex;
     align-self: flex-end;
