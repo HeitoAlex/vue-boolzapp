@@ -42,16 +42,35 @@
                     </span>
                 </div>
                 <div id="search-contact">
-                    <div>
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="search" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
+                </div>
+                <div id="message-list">
+                    <div v-for="(item, index) in contacts" class="chat-preview">
+                        <div class="last-message">
+                            <img src="contacts[item].avatar" alt="">
+                            <span>
+                                <p>
+                                    {{ item.name}}
+                                </p>
+                                <p>Ultimo messaggio inviato</p>
+                            </span>
+                        </div>
+                        <div class="time">12:00</div>
                     </div>
                 </div>
-                <div id="message-list"></div>
             </div>
         </section>
         <section id="chat">
-            <div id="interlocutor"></div>
+            <div id="interlocutor">
+                <div id="interlocutor-profile">
+                </div>
+                <div id="chat-action">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
             <div id="message-area">
                 <div id="conversation"></div>
                 <div id="text-input"></div>
