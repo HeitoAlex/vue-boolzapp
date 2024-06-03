@@ -46,12 +46,12 @@
                         <input type="search" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
                 </div>
                 <div id="message-list">
-                    <div v-for="(item, index) in contacts" class="chat-preview">
+                    <div v-for="(item, index) in contacts" class="chat-preview" @click="activateChat(index)">
                         <div class="last-message">
                             <img :src="item.avatar" alt="">
                             <span>
                                 <p>
-                                    {{ item.name}}
+                                    {{ item.name }}
                                 </p>
                                 <p>Ultimo messaggio inviato</p>
                             </span>
@@ -64,6 +64,13 @@
         <section id="chat">
             <div id="interlocutor">
                 <div id="interlocutor-profile">
+                    <img :src="contacts[activeContact].avatar" alt="">
+                    <span>
+                        <p>
+                            {{ contacts[activeContact].name }}
+                        </p>
+                        <p>Ultimo messaggio oggi alle 12:00</p>
+                    </span>
                 </div>
                 <div id="chat-action">
                     <i class="fa-solid fa-magnifying-glass"></i>

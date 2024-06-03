@@ -53,12 +53,18 @@ div#user-avatar{
     align-items: center;
 }
 
-div#user-avatar>img,
-div#interlocutor>img,
+div#user-avatar>img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+div#interlocutor-profile>img,
 div#notification>span#bell{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    margin-right: .5rem;
 }
 
 div#user-action>i,
@@ -84,7 +90,6 @@ div#notification>span#bell{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 .25rem;
 }
 
 span#bell>i{
@@ -130,11 +135,13 @@ div#message-list{
     padding: .5rem;
 }
 
-div.last-message{
+div.last-message,
+div#interlocutor-profile{
     display: flex;
 }
 
 div.last-message>span>p:last-child,
+div#interlocutor-profile>span>p:last-child,
 div.time{
     font-size: .75rem;
     color: grey;
