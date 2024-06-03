@@ -48,7 +48,7 @@
                 <div id="message-list">
                     <div v-for="(item, index) in contacts" class="chat-preview">
                         <div class="last-message">
-                            <img src="contacts[item].avatar" alt="">
+                            <img :src="item.avatar" alt="">
                             <span>
                                 <p>
                                     {{ item.name}}
@@ -72,7 +72,8 @@
                 </div>
             </div>
             <div id="message-area">
-                <div id="conversation"></div>
+                <div id="conversation">
+                </div>
                 <div id="text-input"></div>
             </div>
         </section>
