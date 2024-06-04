@@ -184,12 +184,21 @@ const { createApp } = Vue
                     status: 'sent'
                 };
 
-                this.contacts[activeContact].messages.push(newText);
+                this.contacts[this.activeContact].messages.push(newText);
                 this.clearTextInput();
             } else {
-                console.log('non ci sono attività')
-            }
+                console.log('non ci sono messaggi da inviare')
+            };
             
+            setTimeout(function() {
+                let autoReply = {
+                    message: 'ok',
+                    status: 'received'
+                };
+
+                this.contacts[this.activeContact].messages.push(autoReply);
+
+            }, 1000)
         },
 
         clearTextInput(){
