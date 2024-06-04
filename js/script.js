@@ -166,14 +166,34 @@ const { createApp } = Vue
                         }
                     ],
                 }
-            ]
-            
+            ],
+            newMessage: '',
         }
     },
     methods: {
 
-        activateChat: function(chatIndex){
+        activateChat : function(chatIndex){
             this.activeContact = chatIndex;
+        },
+
+        addMsg : function(newTextMsg){
+
+            if(newTextMsg.trim().length >= 1){
+                const newText = {
+                    message: newTextMsg.trim(),
+                    status: 'sent'
+                };
+
+                this.contacts[activeContact].messages.push(newText);
+                this.clearTextInput();
+            } else {
+                console.log('non ci sono attività')
+            }
+            
+        },
+
+        clearTextInput(){
+            this.newMessage = '';
         },
 
     }

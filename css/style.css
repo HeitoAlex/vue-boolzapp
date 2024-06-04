@@ -33,7 +33,7 @@ section#chat{
 
 div#user-profile,
 div#interlocutor,
-div#text-input{
+div#user-text{
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ div#text-input{
 }
 
 div#interlocutor,
-div#text-input{
+div#user-text{
     border-left: 2px solid #E4E4E4;
 }
 
@@ -187,4 +187,18 @@ div#conversation{
     margin-bottom: .5rem;
     display: flex;
     align-self: flex-end;
+}
+
+div#user-text>i{
+    margin: 0 1.5rem;
+    color: #6B7376;
+}
+
+div#user-text>input{
+    width: 100%;
+    height: 90%;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    padding: 0 .3rem;
 }
