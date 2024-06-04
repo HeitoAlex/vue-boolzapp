@@ -187,10 +187,10 @@ const { createApp } = Vue
                 this.contacts[this.activeContact].messages.push(newText);
                 this.clearTextInput();
             } else {
-                console.log('non ci sono messaggi da inviare')
+                clearTimeout(timeOut)
             };
             
-            setTimeout(function() {
+            const timeOut = setTimeout(function() {
                 let autoReply = {
                     message: 'ok',
                     status: 'received'
