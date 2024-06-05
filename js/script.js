@@ -168,6 +168,7 @@ const { createApp } = Vue
                 }
             ],
             newMessage: '',
+            contactSearched: '',
         }
     },
     methods: {
