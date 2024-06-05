@@ -46,7 +46,7 @@
                         <input type="search" placeholder="Cerca o inizia una nuova chat" aria-label="Search" v-model.trim="contactSearched">
                 </div>
                 <div id="message-list">
-                    <div v-for="(item, index) in contacts" class="chat-preview" @click="activateChat(index)" v-show="(item.name.includes(contactSerached))">
+                    <div v-for="(item, index) in contacts" class="chat-preview" @click="activateChat(index)" v-show="(item.name.includes(contactSearched))">
                         <div class="last-message">
                             <img :src="item.avatar" alt="">
                             <span>
