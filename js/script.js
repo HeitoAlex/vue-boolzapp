@@ -190,14 +190,14 @@ const { createApp } = Vue
                 clearTimeout(timeOut)
             };
             
-            const timeOut = setTimeout(function() {
+            const timeOut = setTimeout(() => {
                 let autoReply = {
                     message: 'ok',
                     status: 'received'
                 };
-
+                console.log(this)
                 this.contacts[this.activeContact].messages.push(autoReply);
-
+                
             }, 1000)
         },
 
